@@ -43,3 +43,38 @@ Phase 0 — Project Foundation
 # Current Task
 
 Project Documentation
+---
+
+# Brand Identity
+
+## Project Name
+
+CineBoxBD
+
+## Official Theme
+
+Dark Cinema
+
+## Logo Style
+
+Icon + Text
+
+## Official Tagline
+
+Watch Originals. Download Anytime.
+
+## Official Color Palette
+
+Background : #0F0F0F
+
+Surface : #1A1A1A
+
+Primary : #E50914
+
+Primary Hover : #C40812
+
+Text : #FFFFFF
+
+Secondary Text : #B3B3B3
+
+Border : #2A2A2A
