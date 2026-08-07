@@ -1,7 +1,15 @@
-export default function HomePage() {
+import Hero from "@/components/home/Hero";
+import CategorySection from "@/components/home/CategorySection";
+import CommunityBanner from "@/components/home/CommunityBanner";
+import MovieGrid from "@/components/home/MovieGrid";
+
+export default function Home() {
   return (
-    <main>
-      <h1>Welcome to CineBoxBD</h1>
-    </main>
+    <>
+      <Hero />
+      <CategorySection />
+      <CommunityBanner />
+      <MovieGrid />
+    </>
   );
 }
