@@ -7,31 +7,20 @@ import CommunityBanner from "@/components/home/CommunityBanner";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-slate-950">
-      <div className="home-page -space-y-8">
+    <main className="min-h-screen bg-slate-950">
+      <Hero />
 
-        {/* Hero */}
-        <Hero />
+      <SearchBar />
 
-        {/* Search */}
-        <SearchBar />
+      <CategorySection />
 
-        {/* Categories */}
-        <CategorySection />
+      <TrendingSection />
 
-        {/* Trending Movies */}
-        <TrendingSection />
+      <LatestMovies />
 
-        {/* Latest Movies */}
-        <LatestMovies />
+      <CommunityBanner />
 
-        {/* Community */}
-        <CommunityBanner />
-
-        {/* Small gap before Footer */}
-        <div className="h-2 w-full" />
-
-      </div>
+      <div className="h-2 w-full" />
     </main>
   );
 }
