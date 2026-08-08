@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
 import "./globals.css";
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,11 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "CineBoxBD",
-    template: "%s | CineBoxBD",
-  },
-  description: "CineBoxBD - Movies, Series, Downloads and Entertainment.",
+  title: "CineBoxBD",
+  description: "Discover movies, series and entertainment on CineBoxBD.",
 };
 
 export default function RootLayout({
@@ -32,16 +29,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-screen flex-col">
+      <body className="min-h-full bg-slate-950">
         <Navbar />
 
-        <main className="flex-1">
-          {children}
-        </main>
+        {children}
 
         <Footer />
+
+        <ScrollToTop />
       </body>
     </html>
   );
